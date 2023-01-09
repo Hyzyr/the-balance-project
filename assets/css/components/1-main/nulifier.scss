@@ -1,0 +1,90 @@
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+***/
+// :root {
+//   font-size: calc(1vw + 0.6em);
+// }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+}
+button:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($color: #000, $alpha: 0.2);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color: #000, $alpha: 0.3);
+}
+/*** 
+  ====================================================================
+      Global Settings
+  ====================================================================
+   ***/
+//  font-family: 'Merriweather', serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $black;
+  line-height: 1.4;
+  font-weight: 400;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}

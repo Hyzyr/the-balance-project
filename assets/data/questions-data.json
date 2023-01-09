@@ -1,0 +1,177 @@
+[
+  {
+    "title": "Relationships",
+    "questions": [
+      {
+        "category": "Relationships",
+        "question": "True or False: You can develop a relationship with somenone new.",
+        "answer": "False - You can interact with strangers, but you need a real connection (emotional, intellectual, physical) with somebody to have a relationship with them!",
+        "points": 100
+      },
+      {
+        "category": "Relationships",
+        "question": "The relationship between a client and a support worker should be A) personal or B) professional?",
+        "answer": "B) Professional - While we can all have fun together and talk about our personal lives sometimes if we want, the relationship should only stay within our time at the DDRC.",
+        "points": 200
+      },
+      {
+        "category": "Relationships",
+        "question": "With which of the following types of people can we have relationships with? A) Acquaintances B) Family C) Co-workers D) All of the above",
+        "answer": "D) All of the above - You can end up forming a strong connection with any of these types of people, given the right circumstances.",
+        "points": 300
+      },
+      {
+        "category": "Relationships",
+        "question": "___________ is the name of the word which describes how we can tell the difference between types of friends.",
+        "answer": "Boundaries - When we know our boundaries well, we can tell the difference between strangers and acquaintances, acquaintances and friends, friends and family, etc.",
+        "points": 400
+      },
+      {
+        "category": "Relationships",
+        "question": "Name two different reasons why friendship is important.",
+        "answer": "Any combination of the following: Sense of belonging; Less stress, more happiness; Improved self-worth; Helps you cope with bad events; or Encourages good behaviours.",
+        "points": 500
+      }
+    ]
+  },
+  {
+    "title": "People Skills (Social Skills)",
+    "questions": [
+      {
+        "category": "People Skills (Social Skills)",
+        "question": "Putting yourself in someone elses shoes shows",
+        "answer": "What is empathy",
+        "points": 100
+      },
+      {
+        "category": "People Skills (Social Skills)",
+        "question": "What is it called when you stand up for yourself",
+        "answer": "What is being assertive?",
+        "points": 200
+      },
+      {
+        "category": "People Skills (Social Skills)",
+        "question": "What is it called when you do kind gestures like hold the door for another person ",
+        "answer": "What is being polite",
+        "points": 300
+      },
+      {
+        "category": "People Skills (Social Skills)",
+        "question": "True or false: tolerance is when you respect that you and someone else have difference of perspectives",
+        "answer": "True",
+        "points": 400
+      },
+      {
+        "category": "People Skills (Social Skills)",
+        "question": "Saying please and thank you are examples of",
+        "answer": "Manners",
+        "points": 500
+      }
+    ]
+  },
+  {
+    "title": "Coping with emotions",
+    "questions": [
+      {
+        "category": "Coping with emotions",
+        "question": "This skill is anything a person does to keep themselves calm or calm down after a stressful event?",
+        "answer": "What is a coping skill?",
+        "points": 100
+      },
+      {
+        "category": "Coping with emotions",
+        "question": "This coping skills can be used anytime and anywhere and really only requires your lungs, mouth, nose, and of course attention!",
+        "answer": "What is deep breathing?",
+        "points": 200
+      },
+      {
+        "category": "Coping with emotions",
+        "question": "True or false: coping skills are only used when you are very, very angry.",
+        "answer": "False. Coping skills can be used anytime you feel a negative emotion, before you feel VERY upset.",
+        "points": 300
+      },
+      {
+        "category": "Coping with emotions",
+        "question": "What are 2 ways you calm down?",
+        "answer": "• Take a walk • Take deep breaths • Talk to a friend • Art • Music",
+        "points": 400
+      },
+      {
+        "category": "Coping with emotions",
+        "question": "True or false: asking for time alone is a healthy coping strategy",
+        "answer": "True or false: asking for time alone is a healthy coping strategy",
+        "points": 500
+      }
+    ]
+  },
+  {
+    "title": "Mental Health",
+    "questions": [
+      {
+        "category": "Mental Health",
+        "question": "A condition that affects a person's thinking, feeling, behavior or mood. These conditions deeply impact day-to-day living and may also affect the ability to relate to others.",
+        "answer": "What is mental illness?",
+        "points": 100
+      },
+      {
+        "category": "Mental Health",
+        "question": "This is a common and serious medical illness that negatively affects how you feel, the way  you think and how you act. ",
+        "answer": "Depression",
+        "points": 200
+      },
+      {
+        "category": "Mental Health",
+        "question": " A symptom of depression is a persistently ____ mood. ",
+        "answer": "WHAT IS SAD or DEPRESSED or UNHAPPY ",
+        "points": 300
+      },
+      {
+        "category": "Mental Health",
+        "question": "Impulsively buying things on Amazon and staying up for days is commonly associated with this.",
+        "answer": "What is Mania or Bipolar?",
+        "points": 400
+      },
+      {
+        "category": "Mental Health",
+        "question": "A sudden, overpowering fright response or feeling of terror for no known reason is an example of this. ",
+        "answer": "What is a Panic Attack? ",
+        "points": 500
+      }
+    ]
+  },
+  {
+    "title": "Tornado Safety and Trivia",
+    "questions": [
+      {
+        "category": "Tornado Safety and Trivia",
+        "question": "Coming soon!",
+        "answer": "Still want an answer?",
+        "points": 100
+      },
+      {
+        "category": "Tornado Safety and Trivia",
+        "question": "Coming soon!",
+        "answer": "Still want an answer?",
+        "points": 200
+      },
+      {
+        "category": "Tornado Safety and Trivia",
+        "question": "Coming soon!",
+        "answer": "Still want an answer?",
+        "points": 300
+      },
+      {
+        "category": "Tornado Safety and Trivia",
+        "question": "Coming soon!",
+        "answer": "Still want an answer?",
+        "points": 400
+      },
+      {
+        "category": "Tornado Safety and Trivia",
+        "question": "Coming soon!",
+        "answer": "Still want an answer?",
+        "points": 500
+      }
+    ]
+  }
+]

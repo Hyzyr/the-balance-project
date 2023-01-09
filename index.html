@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Balance Project</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="autoContainer">
+        <div class="header__inner">
+          <div class="header__inner-logo">
+            <img src="assets/images/Logo.svg" alt="The Balance Project" />
+          </div>
+          <div class="header__inner-menu" id="menuBtn">
+            Menu
+            <button class="burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu active preloader" id="preloader">
+      <div class="menu__inner">
+        <div class="menu__inner-title">
+          <img src="assets/images/Logo.svg" alt="The Balance Project" />
+        </div>
+        <p>Loading data ...</p>
+      </div>
+    </div>
+    <div class="menu" id="menu">
+      <div class="menu__inner">
+        <button class="menu__inner-close" id="closeMenuBtn">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.844481 1.67518C1.46799 1.05856 2.47889 1.05856 3.1024 1.67518L19.4347 17.827C20.0582 18.4436 20.0582 19.4433 19.4347 20.06C18.8112 20.6766 17.8003 20.6766 17.1768 20.06L0.844481 3.90815C0.220975 3.29153 0.220975 2.2918 0.844481 1.67518Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.844094 19.5014C0.220588 18.8847 0.220588 17.885 0.844094 17.2684L17.1764 1.11658C17.7999 0.49996 18.8108 0.499959 19.4343 1.11658C20.0578 1.73319 20.0578 2.73292 19.4343 3.34954L3.10201 19.5014C2.4785 20.118 1.4676 20.118 0.844094 19.5014Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div class="menu__inner-title">Game Theme</div>
+        <div class="menu__inner-buttons">
+          <div class="select">
+            <input type="hidden" name="" id="teamsCount" />
+            <div class="select__selected">----</div>
+            <div class="select__options">
+              <li data-value="1">1 team</li>
+              <li data-value="2">2 teams</li>
+              <li data-value="3">3 teams</li>
+              <li data-value="4">4 teams</li>
+              <li data-value="5" data-default="true">5 teams</li>
+            </div>
+          </div>
+          <button class="button button--dark" id="continueBtn">Continue</button>
+          <button class="button button--text" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <section class="questions">
+      <div class="autoContainer">
+        <div class="questions__inner">
+          <div class="questions__inner-row">
+            <div class="questions__inner-column">
+              <div class="questions__header" data-category="category1">
+                ----
+              </div>
+            </div>
+            <div class="questions__inner-column">
+              <div class="questions__header" data-category="category2">
+                ----
+              </div>
+            </div>
+            <div class="questions__inner-column">
+              <div class="questions__header" data-category="category3">
+                ----
+              </div>
+            </div>
+            <div class="questions__inner-column">
+              <div class="questions__header" data-category="category4">
+                ----
+              </div>
+            </div>
+            <div class="questions__inner-column">
+              <div class="questions__header" data-category="category5">
+                ----
+              </div>
+            </div>
+          </div>
+          <div class="questions__inner-body">
+            <div class="questions__inner-row">
+              <div
+                class="questions__inner-column"
+                data-category="cat-1"
+                data-question="qst-1"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-1"
+                data-question="qst-1"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-1"
+                data-question="qst-1"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-1"
+                data-question="qst-1"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-1"
+                data-question="qst-1"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-2"
+                data-question="qst-2"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-2"
+                data-question="qst-2"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-2"
+                data-question="qst-2"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-2"
+                data-question="qst-2"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-2"
+                data-question="qst-2"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-3"
+                data-question="qst-3"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-3"
+                data-question="qst-3"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-3"
+                data-question="qst-3"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-3"
+                data-question="qst-3"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-3"
+                data-question="qst-3"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-4"
+                data-question="qst-4"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-4"
+                data-question="qst-4"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-4"
+                data-question="qst-4"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-4"
+                data-question="qst-4"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-4"
+                data-question="qst-4"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-5"
+                data-question="qst-5"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-5"
+                data-question="qst-5"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-5"
+                data-question="qst-5"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-5"
+                data-question="qst-5"
+              >
+                <div class="questions__item">000</div>
+              </div>
+              <div
+                class="questions__inner-column"
+                data-category="cat-5"
+                data-question="qst-5"
+              >
+                <div class="questions__item">000</div>
+              </div>
+            </div>
+            <div class="questions__message active" style="display: none">
+              <div class="questions__message-header">
+                <button
+                  class="questions__message-header-close"
+                  id="closeQuestion"
+                >
+                  <span>Esc</span>
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.844481 1.67518C1.46799 1.05856 2.47889 1.05856 3.1024 1.67518L19.4347 17.827C20.0582 18.4436 20.0582 19.4433 19.4347 20.06C18.8112 20.6766 17.8003 20.6766 17.1768 20.06L0.844481 3.90815C0.220975 3.29153 0.220975 2.2918 0.844481 1.67518Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M0.844094 19.5014C0.220588 18.8847 0.220588 17.885 0.844094 17.2684L17.1764 1.11658C17.7999 0.49996 18.8108 0.499959 19.4343 1.11658C20.0578 1.73319 20.0578 2.73292 19.4343 3.34954L3.10201 19.5014C2.4785 20.118 1.4676 20.118 0.844094 19.5014Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="questions__message-header-answer"
+                  id="showAnswer"
+                >
+                  Show Answer
+                  <span class="badge">Spacebar</span>
+                </button>
+              </div>
+              <div class="questions__message-content">
+                <div class="questions__message-content-image">
+                  <img
+                    src="assets/images/question-illustration.png"
+                    alt="question"
+                    class="questionMark"
+                  />
+                  <img
+                    src="assets/images/smile-illustration.png"
+                    alt="question"
+                    class="answerMark"
+                  />
+                </div>
+                <h3>
+                  What is it called when you do kind gestures like hold the door
+                  for another person
+                </h3>
+              </div>
+              <div class="questions__message-footer">
+                <h2>What is being polite</h2>
+              </div>
+              <div class="questions__message-buttons">
+                <button
+                  class="button button--dark answerMark"
+                  id="closeQuestion2"
+                >
+                  Continue
+                </button>
+                <button
+                  class="button button--dark questionMark"
+                  id="showAnswer2"
+                >
+                  Show Answer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teams">
+      <div class="autoContainer">
+        <div class="teams__inner">
+          <div class="teams__card disabled">
+            <strong>Team 1</strong>
+            <label>0</label>
+            <div>
+              <button class="_remove">-</button>
+              <button class="_add">+</button>
+            </div>
+          </div>
+          <div class="teams__card disabled">
+            <strong>Team 2</strong>
+            <label>0</label>
+            <div>
+              <button class="_remove">-</button>
+              <button class="_add">+</button>
+            </div>
+          </div>
+          <div class="teams__card disabled">
+            <strong>Team 3</strong>
+            <label>0</label>
+            <div>
+              <button class="_remove">-</button>
+              <button class="_add">+</button>
+            </div>
+          </div>
+          <div class="teams__card disabled">
+            <strong>Team 4</strong>
+            <label>0</label>
+            <div>
+              <button class="_remove">-</button>
+              <button class="_add">+</button>
+            </div>
+          </div>
+          <div class="teams__card disabled">
+            <strong>Team 5</strong>
+            <label>0</label>
+            <div>
+              <button class="_remove">-</button>
+              <button class="_add">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/customSelect.js"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
