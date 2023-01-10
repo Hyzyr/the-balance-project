@@ -888,7 +888,7 @@ li {
   background: url(../images/hero-desktop.png);
   background-position: center center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 18px;
   font-size: 11px;
 }
 .hero__inner h1 {
