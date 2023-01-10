@@ -1,28 +1,27 @@
+// (max-width: 1680px)
+@include xxxlg-max {
+  @include xxxlg-max-index;
+}
 // (max-width: 1180px)
 @include xlg-xxlg {
-  @include index-xlg-xxlg;
 }
 // (max-width: 1024px)
 @include lg-xlg {
   .autoContainer {
     padding: 0 20px;
   }
-  @include index-lg-xlg;
 }
 // (max-width: 840px)
 @include md-lg {
-  @include index-md-lg;
 }
 // height media
 //max-height: 1100px
 @include xlg-xxlg-height {
   @include header-xlg-xxlg-height;
-  @include index-xlg-xxlg-height;
 }
 
 //max-height: 840px
 @include md-lg-height {
-  @include index-md-lg-height;
 }
 
 // (max-width: 700px)
@@ -30,22 +29,18 @@
   .autoContainer {
     padding: 0 15px;
   }
-  @include index-sm-md;
 }
 // (max-width: 580px)
 @include xsm-sm {
   @include header-xsm-sm;
-  @include index-xsm-sm;
 }
 
 // (max-width: 420px)
 @include xxsm-xsm {
   @include header-xxsm-xsm;
-  @include index-xxsm-xsm;
 }
 
 // max-height: 600px
 @include xsm-sm-height {
   @include header-xsm-sm-height;
-  @include index-xsm-sm-height;
 }

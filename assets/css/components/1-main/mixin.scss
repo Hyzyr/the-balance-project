@@ -109,6 +109,11 @@
   -moz-transform: rotate(270deg);
 }
 
+@mixin xxxlg-max {
+  @media (max-width: 1760px) {
+    @content;
+  }
+}
 @mixin xlg-xxlg {
   @media (max-width: 1180px) {
     @content;

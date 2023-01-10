@@ -1,0 +1,96 @@
+@keyframes rockit {
+  from {
+    transform: translatey(30px) rotate(-45deg);
+  }
+  to {
+    transform: translatey(30px) rotate(10deg);
+  }
+}
+
+@keyframes bubble-transparent {
+  0% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20%);
+    opacity: 0.8;
+  }
+}
+
+@keyframes cork {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float1 {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes float2 {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes swim {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+
+.rockit {
+  animation: rockit 3s ease infinite alternate;
+}
+.cork {
+  animation-name: cork;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bubble-transparent {
+  animation-name: bubble-transparent;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.float2 {
+  animation: float2 4s ease-in-out infinite alternate;
+}
+
+.float1 {
+  animation: float1 4s ease-in-out infinite alternate;
+}
+.twinkle {
+  animation: fadeIn 0.5s 0.2s linear infinite alternate;
+}
+.swim {
+  animation: swim 6s linear infinite alternate;
+}

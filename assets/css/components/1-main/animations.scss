@@ -6,6 +6,16 @@
     opacity: 1;
   }
 }
+@keyframes GrowInSmooth {
+  from {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 @keyframes fadeFly {
   from {
@@ -29,5 +39,32 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes faceAnimation {
+  from {
+    top: 60%;
+    width: 80%;
+    height: 80%;
+    background-position: top right;
+  }
+  40% {
+    background-position: top right;
+  }
+  to {
+    top: 50%;
+    width: 86%;
+    height: 86%;
+    background-position: center center;
+  }
+}
+@keyframes smileAnimation {
+  from {
+    transform: translate(5%, 10%) scale(0.9);
+  }
+
+  to {
+    transform: translat(0%, 0%) scale(1);
   }
 }

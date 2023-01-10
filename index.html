@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Balance Project</title>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/infinite-animations.css" />
   </head>
   <body>
     <header class="header">
-      <div class="autoContainer">
+      <div class="autoContainer autoContainer--lg">
         <div class="header__inner">
           <div class="header__inner-logo">
             <img src="assets/images/Logo.svg" alt="The Balance Project" />
@@ -23,58 +24,59 @@
         </div>
       </div>
     </header>
-    <!-- <div class="menu active preloader" id="preloader">
-      <div class="menu__inner">
-        <div class="menu__inner-title">
-          <img src="assets/images/Logo.svg" alt="The Balance Project" />
-        </div>
-        <p>Loading data ...</p>
-      </div>
-    </div> -->
-    <!-- <div class="menu" id="menu">
-      <div class="menu__inner">
-        <button class="menu__inner-close" id="closeMenuBtn">
-          <svg
-            width="20"
-            height="21"
-            viewBox="0 0 20 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.844481 1.67518C1.46799 1.05856 2.47889 1.05856 3.1024 1.67518L19.4347 17.827C20.0582 18.4436 20.0582 19.4433 19.4347 20.06C18.8112 20.6766 17.8003 20.6766 17.1768 20.06L0.844481 3.90815C0.220975 3.29153 0.220975 2.2918 0.844481 1.67518Z"
-              fill="currentColor"
+
+    <div class="hero">
+      <div class="autoContainer">
+        <div class="hero__inner">
+          <div class="hero__inner-bg">
+            <img
+              src="assets/images/illustrations/leaf-1.svg"
+              alt=""
+              class="leaf-1   bubble-transparent "
             />
-            <path
-              d="M0.844094 19.5014C0.220588 18.8847 0.220588 17.885 0.844094 17.2684L17.1764 1.11658C17.7999 0.49996 18.8108 0.499959 19.4343 1.11658C20.0578 1.73319 20.0578 2.73292 19.4343 3.34954L3.10201 19.5014C2.4785 20.118 1.4676 20.118 0.844094 19.5014Z"
-              fill="currentColor"
+            <img
+              src="assets/images/illustrations/leaf-2.svg"
+              alt=""
+              class="leaf-2 swim"
             />
-          </svg>
-        </button>
-        <div class="menu__inner-title">Game Theme</div>
-        <div class="menu__inner-buttons">
-          <div class="select">
-            <input type="hidden" name="" id="teamsCount" />
-            <div class="select__selected">----</div>
-            <div class="select__options">
-              <li data-value="1">1 team</li>
-              <li data-value="2">2 teams</li>
-              <li data-value="3">3 teams</li>
-              <li data-value="4">4 teams</li>
-              <li data-value="5" data-default="true">5 teams</li>
+          </div>
+          <h1>
+            To give you the best resources, let us know where you want to go.
+          </h1>
+          <div class="hero__inner-buttons">
+            <div class="button">Kids World</div>
+            <div class="button">Parents World</div>
+          </div>
+          <div class="hero__smile">
+            <div class="hero__smile-space"></div>
+            <div class="hero__smile-face">
+              <svg
+                width="143"
+                height="55"
+                viewBox="0 0 143 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M47.5916 11.7143H46.7403C43.7336 11.5555 40.8207 10.6073 38.2919 8.96439C35.7632 7.32144 33.7068 5.04113 32.3278 2.35048L35.811 0.560242C36.8748 2.63832 38.4639 4.39841 40.4186 5.66368C42.3732 6.92894 44.6247 7.65487 46.9468 7.7685C49.2689 7.88212 51.5799 7.37941 53.6475 6.31097C55.7152 5.24253 57.4668 3.64596 58.7264 1.68157L62.0139 3.81605C60.4531 6.23455 58.3168 8.2234 55.7985 9.60256C53.2801 10.9817 50.4594 11.7075 47.5916 11.7143Z"
+                  fill="white"
+                  class="eye-1"
+                />
+                <path
+                  d="M9.13848 18.521C6.17724 18.5234 3.26547 17.7577 0.684692 16.298L2.64159 12.875C4.33949 13.8414 6.22891 14.4185 8.17461 14.5651C10.1203 14.7117 12.0742 14.4243 13.8964 13.7231C15.7186 13.0219 17.3642 11.9244 18.7152 10.5093C20.0663 9.09419 21.0895 7.39643 21.7116 5.53735L25.4199 6.79628C24.2792 10.2189 22.0953 13.1935 19.1781 15.298C18.6079 15.7094 18.0154 16.0834 17.4043 16.4189C22.4357 26.1284 29.8914 34.3598 39.0429 40.3036C48.3125 46.3241 58.9953 49.7855 70.0175 50.3397C81.0397 50.894 92.0128 48.5216 101.834 43.4611C111.525 38.4673 119.758 31.0295 125.727 21.8789C125.385 21.6444 125.05 21.3968 124.723 21.1364C121.682 18.7114 119.549 15.32 118.676 11.5176L122.492 10.6422C122.929 12.553 123.78 14.3434 124.985 15.8853C126.189 17.4272 127.718 18.6826 129.461 19.5621C131.204 20.4415 133.119 20.9233 135.069 20.9729C137.018 21.0224 138.955 20.6385 140.74 19.8488L142.315 23.4488C140.138 24.3957 137.789 24.8779 135.417 24.8652C133.28 24.8712 131.176 24.4753 129.209 23.7134C123.132 33.0842 114.83 40.7881 105.052 46.1303C95.2504 51.4855 84.2749 54.2985 73.1193 54.3145H73.1176C72.0223 54.3145 70.927 54.3145 69.822 54.2359C58.1244 53.6235 46.7904 49.9414 36.9487 43.5562C27.1257 37.1831 19.1313 28.3392 13.7582 17.9021C12.2719 18.3143 10.7282 18.525 9.16784 18.521H9.13848Z"
+                  fill="white"
+                  class="smile"
+                />
+                <path
+                  d="M97.3066 14.2127H96.4554C93.4415 14.057 90.5212 13.1082 87.9867 11.4614C85.4522 9.81463 83.3924 7.52751 82.0135 4.82902L85.4967 3.02905C86.5557 5.11123 88.1417 6.87615 90.095 8.14606C92.0484 9.41596 94.3001 10.1461 96.6235 10.2628C98.9468 10.3794 101.26 9.87852 103.329 8.81064C105.399 7.74277 107.152 6.14564 108.412 4.17992L111.7 6.32412C110.14 8.73663 108.008 10.721 105.495 12.0981C102.983 13.4753 100.169 14.202 97.3066 14.2127Z"
+                  fill="white"
+                  class="eye-2"
+                />
+              </svg>
             </div>
           </div>
-          <button class="button button--dark" id="continueBtn">Continue</button>
-          <button class="button button--text" id="resetBtn">Reset</button>
         </div>
       </div>
-    </div> -->
-    <section class="questions">
-      <div class="autoContainer">
-        <div class="questions__inner">
-          <h1>Nothinh here yet</h1>
-        </div>
-      </div>
-    </section>
+    </div>
   </body>
 </html>

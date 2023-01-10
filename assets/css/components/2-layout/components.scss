@@ -1,7 +1,12 @@
 .autoContainer {
-  max-width: 1510px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 30px;
+  
+  &--lg {
+    max-width: 1528px;
+    padding: 0 14px;
+  }
 }
 
 .logo {
