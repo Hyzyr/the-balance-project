@@ -59,6 +59,22 @@
     background-position: center center;
   }
 }
+@keyframes faceAnimationMob {
+  from {
+    width: 80%;
+    height: 80%;
+    background-position: top right;
+  }
+  40% {
+    background-position: top right;
+  }
+  to {
+    width: 90%;
+    height: 90%;
+    background-position: center center;
+  }
+}
+
 @keyframes smileAnimation {
   from {
     transform: translate(5%, 10%) scale(0.9);

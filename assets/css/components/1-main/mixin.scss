@@ -105,15 +105,10 @@
   transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg); 
+  -ms-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
 }
 
-@mixin xxxlg-max {
-  @media (max-width: 1760px) {
-    @content;
-  }
-}
 @mixin xlg-xxlg {
   @media (max-width: 1180px) {
     @content;
@@ -165,6 +160,11 @@
 }
 @mixin xsm-sm-height {
   @media (max-height: 600px) {
+    @content;
+  }
+}
+@mixin xxlg-xlg-height {
+  @media (max-height: 980px) {
     @content;
   }
 }
