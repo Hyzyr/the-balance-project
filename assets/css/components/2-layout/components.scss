@@ -20,6 +20,14 @@
   }
 }
 
+.hr {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: $gray-2;
+  margin: 10px auto;
+}
+
 .button {
   position: relative;
   cursor: pointer;
@@ -291,11 +299,27 @@
   justify-content: center;
   width: 100%;
   padding-bottom: 65%;
+  background: url(../images/lazy/smile.png);
+  background-position: center center;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
   img {
     position: absolute;
     top: 0;
     left: 0;
     @include fullImage;
+    visibility: hidden;
   }
+
+  &--loaded {
+    img {
+      animation: 0.3s lazyAnim ease-in both;
+    }
+  }
+}
+
+.nobreak {
+  white-space: nowrap;
 }

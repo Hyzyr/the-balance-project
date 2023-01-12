@@ -29,6 +29,8 @@
       font-weight: 600;
       font-size: 40px;
       line-height: 1.5;
+      width: 80%;
+      text-align: center;
     }
     .button--border {
       color: $white;
@@ -40,6 +42,12 @@
         border-color: rgba($white, 0.6);
         background: rgba($white, 0.1);
       }
+    }
+  }
+  &--parent {
+    .lander__inner-bg {
+      background-image: url(../images/lander/parents-desktop-hero-image.png);
+      background-position: left center;
     }
   }
 }
@@ -79,20 +87,11 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 24px;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-
-      &:before {
-        position: absolute;
-        content: "";
-        display: block;
-        top: 100%;
-        left: 50%;
-        width: 80%;
-        transform: translate(-50%);
-        height: 1.5px;
-        background: $white-2;
-      }
+      @include ellipsis;
+    }
+    .hr {
+      max-width: 200px;
+      margin: 10px auto;
     }
     &-para {
       color: $black;
@@ -100,11 +99,13 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
+      @include ellipsis;
     }
     .button {
+      font-size: 16px;
       border-radius: 0.5em;
-      margin-top: 1em;
-      padding: 0.7em 2.2em;
+      margin-top: 0.8em;
+      padding: 0.5em 2.2em;
     }
   }
   &--row {
@@ -120,12 +121,9 @@
       }
       &__content {
         width: 60%;
-        &-title {
-          &::before {
-            left: 0;
-            width: 45%;
-            transform: unset;
-          }
+        .hr {
+          max-width: 220px;
+          margin-left: 0;
         }
       }
     }
@@ -161,9 +159,18 @@
       display: flex !important;
     }
     .article {
+      cursor: pointer;
       padding: 0 15px;
+      transition: 0.3s ease-out;
+
+      &:active {
+        transform: scale(0.98);
+      }
     }
     .slick {
+      &-track {
+        padding: 5px 0;
+      }
       &-arrow {
         cursor: pointer;
         position: absolute;
@@ -197,7 +204,7 @@
         }
       }
       &-prev {
-        right: calc(100% + 30px);
+        left: -70px;
         &::before {
           border-bottom: 0.15em solid currentColor;
           border-left: 0.15em solid currentColor;
@@ -205,7 +212,7 @@
         }
       }
       &-next {
-        left: calc(100% + 30px);
+        right: -70px;
         &::before {
           border-top: 0.15em solid currentColor;
           border-right: 0.15em solid currentColor;
@@ -243,6 +250,30 @@
   }
 }
 
+@mixin articles-desktop {
+  .slider {
+    .article {
+      padding: 15px;
+      border-radius: 12px;
+      background: $white;
+      .hr {
+        transition: 0.3s ease-out;
+      }
+      &:hover {
+        background: rgba($main, 0.16);
+        transition-delay: 0.1s;
+        z-index: 1;
+        transform: translateY(-5px);
+        .hr {
+          background: rgba($main, 0.26);
+        }
+      }
+    }
+    &-track {
+      padding: 5px 0;
+    }
+  }
+}
 @mixin articles-maxlg {
   .slider {
     &__inner {
@@ -262,12 +293,105 @@
   }
 }
 
+/// max-width: 840px
 @mixin articles-md-extra {
+  .lander {
+    padding: 15px 0;
+    &__inner {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
   .slider {
     &__inner {
+      margin: 0 -10px;
       &-pair {
         flex-direction: column;
         gap: 20px;
+      }
+      .article {
+        padding: 0 10px;
+      }
+    }
+  }
+  .article {
+    &__content {
+      .button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/// max-width: 580px
+@mixin articles-xsm {
+  .lander {
+    &__inner {
+      min-height: 325px;
+
+      h1 {
+        font-size: 32px;
+      }
+      &-bg {
+        background-image: url(../images/lander/kids-mobile-hero-image.png);
+        background-position: center center;
+      }
+    }
+    &--parent {
+      .lander__inner-bg {
+        background-image: url(../images/lander/parents-mobile-hero-image.png);
+      }
+    }
+  }
+  .slider {
+    &__inner {
+      margin: 0 -8px;
+      .article {
+        padding: 0 8px;
+      }
+    }
+  }
+  .article {
+    &--row {
+      align-items: stretch;
+
+      .article {
+        &__image {
+          width: calc(50% - 10px);
+          .ratioImage {
+            height: 100%;
+            padding-bottom: unset;
+          }
+        }
+        &__content {
+          width: calc(50% - 5px);
+        }
+      }
+    }
+  }
+}
+
+/// (max-width: 420px)
+@mixin articles-xxsm {
+  .slider {
+    &__inner {
+      margin: 0 -5px;
+      .article {
+        padding: 0 5px;
+      }
+    }
+  }
+  .article {
+    &__content {
+      &-title {
+        font-size: 16px;
+      }
+      .hr {
+        margin: 8px auto;
+      }
+      .button {
+        font-size: 12px;
       }
     }
   }

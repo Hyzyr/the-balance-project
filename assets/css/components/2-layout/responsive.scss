@@ -1,3 +1,9 @@
+/// desktop
+/// min-width: 1025px
+@media (min-width: 1025px) {
+  @include articles-desktop;
+}
+
 /// maxlg
 /// max-width: 1580px
 @media (max-width: 1580px) {
@@ -31,6 +37,7 @@
 /// max-width: 580px
 @media (max-width: 580px) {
   @include header-xsm;
+  @include articles-xsm;
 }
 
 /// xlg-height
@@ -44,8 +51,10 @@
   @include index-mobile;
 }
 
-// (max-width: 420px)
+/// xxsm
+/// (max-width: 420px)
 @media (max-width: 420px) {
   @include header-xxsm;
   @include index-xxsm;
+  @include articles-xxsm;
 }
