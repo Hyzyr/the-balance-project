@@ -6,7 +6,6 @@ const lazyLoad = (imageWrapper) => {
   const image = imageWrapper.querySelector("img");
   if (image.complete) {
     setLoaded(imageWrapper);
-    console.log("complete");
   } else
     image.onload = () => {
       setLoaded(imageWrapper);
