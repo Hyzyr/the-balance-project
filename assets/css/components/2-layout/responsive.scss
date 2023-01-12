@@ -24,6 +24,7 @@
 /// md-extra
 /// max-width: 840px
 @media (max-width: 840px) {
+  @include typography-md-extra;
   @include articles-md-extra;
 }
 /// sm
@@ -36,6 +37,7 @@
 /// xsm
 /// max-width: 580px
 @media (max-width: 580px) {
+  @include typography-xsm;
   @include header-xsm;
   @include articles-xsm;
 }
@@ -58,3 +60,5 @@
   @include index-xxsm;
   @include articles-xxsm;
 }
+
+

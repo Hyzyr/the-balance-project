@@ -1,19 +1,3 @@
-const lazyLoad = (imageWrapper) => {
-  const setLoaded = (wrapper) => {
-    wrapper.classList.add("ratioImage--loaded");
-  };
-
-  const image = imageWrapper.querySelector("img");
-  if (image.complete) {
-    setLoaded(imageWrapper);
-  } else
-    image.onload = () => {
-      setLoaded(imageWrapper);
-    };
-};
-
-document.querySelectorAll(".ratioImage").forEach(lazyLoad);
-
 const slickSlider = document.querySelector(".slickSlider");
 if (slickSlider) {
   $(slickSlider).slick({

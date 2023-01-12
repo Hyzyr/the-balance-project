@@ -303,6 +303,7 @@
   background-position: center center;
   background-size: 50% auto;
   background-repeat: no-repeat;
+  border-radius: 8px;
   overflow: hidden;
 
   img {
@@ -310,12 +311,22 @@
     top: 0;
     left: 0;
     @include fullImage;
+    opacity: 0;
     visibility: hidden;
+    transition: 0.2s;
   }
 
   &--loaded {
     img {
-      animation: 0.3s lazyAnim ease-in both;
+      animation: 0.5s lazyAnim ease-in backwards;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &--complete {
+    img {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
