@@ -1,50 +1,51 @@
-// (max-width: 1180px)
-@include xlg-xxlg {
+/// maxlg
+/// max-width: 1580px
+@media (max-width: 1580px) {
+  @include articles-maxlg;
 }
-// (max-width: 1024px)
-@include lg-xlg {
+/// lg
+/// max-width: 1180px
+@media (max-width: 1180px) {
+}
+/// md
+/// max-width: 1024px
+@media (max-width: 1024px) {
   .autoContainer {
     padding: 0 20px;
   }
-  @include index-lg-xlg;
+  @include index-md;
 }
-// (max-width: 840px)
-@include md-lg {
+/// md-extra
+/// max-width: 840px
+@media (max-width: 840px) {
+  @include articles-md-extra;
 }
-// height media
-//max-height: 1100px
-@include xlg-xxlg-height {
-  @include header-xlg-xxlg-height;
-}
-
-//max-height: 840px
-@include md-lg-height {
-}
-
-// (max-width: 700px)
-@include sm-md {
+/// sm
+/// max-width: 700px
+@media (max-width: 700px) {
   .autoContainer {
     padding: 0 15px;
   }
 }
-// (max-width: 580px)
-@include xsm-sm {
-  @include header-xsm-sm;
+/// xsm
+/// max-width: 580px
+@media (max-width: 580px) {
+  @include header-xsm;
 }
 
-//max-height: 980px
-@include xxlg-xlg-height {
-  @include index-xxlg-xlg-height;
+/// xlg-height
+/// max-height: 980px
+@media (max-height: 980px) {
+  @include index-xlg-height;
 }
+/// mobile
+/// mobile landscape media
 @media (max-width: 560px) and (min-height: 500px) {
   @include index-mobile;
 }
-// max-height: 600px
-@include xsm-sm-height {
-  @include header-xsm-sm-height;
-}
+
 // (max-width: 420px)
-@include xxsm-xsm {
-  @include header-xxsm-xsm;
-  @include index-xxsm-xsm;
+@media (max-width: 420px) {
+  @include header-xxsm;
+  @include index-xxsm;
 }

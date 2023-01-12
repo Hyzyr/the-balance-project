@@ -1,5 +1,5 @@
 .header {
-  padding: 35px 0;
+  padding: 25px 0 15px 0;
 
   &__inner {
     display: flex;
@@ -194,13 +194,14 @@
   }
 }
 
-@mixin header-xsm-sm {
+/// (max-width: 580px)
+@mixin header-xsm {
   .header {
     padding: 30px 0 20px 0;
   }
 }
 // (max-width: 420px)
-@mixin header-xxsm-xsm {
+@mixin header-xxsm {
   .header {
     padding: 20px 0 15px 0;
     .burger {
@@ -229,91 +230,6 @@
           order: 1;
         }
       }
-    }
-  }
-}
-
-/// height medida
-//max-height: 1100px
-@mixin header-xlg-xxlg-height {
-  .header {
-    padding: 25px 0;
-    &__inner {
-      &-logo {
-        width: 110px;
-      }
-    }
-  }
-}
-
-// max-height 600px
-@mixin header-xsm-sm-height {
-  .header {
-    padding: 12px 0;
-    &__inner {
-      &-logo {
-        width: 90px;
-      }
-      &-menu {
-        font-size: 14px;
-
-        .burger {
-          font-size: 8px;
-        }
-      }
-    }
-  }
-
-  .menu {
-    overflow: auto;
-    box-sizing: border-box;
-
-    &__inner {
-      // position: absolute;
-      // top: 20%;
-      // left: 50%;
-      // transform: translateX(-50%) scale(0.8);
-      box-shadow: 0px 4px 14px -1px rgba($black, 0.2);
-      padding: 25px 15px;
-
-      &-close {
-        top: 12px;
-        right: 12px;
-
-        svg {
-          width: 15px;
-          height: 15px;
-        }
-
-        &:hover {
-          color: rgba($black, 0.6);
-        }
-      }
-
-      &-title {
-        font-size: 16px;
-        padding-bottom: 15px;
-      }
-      &-buttons {
-        padding-top: 15px;
-        gap: 8px;
-        .select {
-          width: 100%;
-          &__options {
-            position: unset;
-            max-height: 0;
-          }
-          &.active .select__options {
-            max-height: 60vh;
-          }
-        }
-        #continueBtn {
-          order: 1;
-        }
-      }
-    }
-    &.active &__inner {
-      // transform: translateX(-50%) scale(1);
     }
   }
 }

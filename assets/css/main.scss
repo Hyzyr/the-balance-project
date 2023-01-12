@@ -1,3 +1,5 @@
+// 0-main components
+@import "./components/0-plugins/slick.scss";
 // 1-main components
 @import "./components/1-main/variables.scss";
 @import "./components/1-main/typography.scss";
@@ -11,6 +13,7 @@
 
 // 3-pages components
 @import "./components/3-pages/index.scss";
+@import "./components/3-pages/article.scss";
 
 // responsive
 @import "./components/2-layout/responsive.scss";

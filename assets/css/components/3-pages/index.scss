@@ -11,9 +11,7 @@
     min-height: 70em;
     box-sizing: border-box;
     padding: 4vw 6em;
-    background: url(../images/hero-desktop.png);
-    background-position: center center;
-    background-size: cover;
+
     border-radius: 18px;
     font-size: inherit;
     @include noSelect;
@@ -87,6 +85,9 @@
       height: 100%;
       border-radius: 18px;
       overflow: hidden;
+      background: url(../images/hero-desktop.png);
+      background-position: center center;
+      background-size: cover;
 
       .leaf-1 {
         position: absolute;
@@ -150,13 +151,9 @@
   }
 }
 
-@mixin index-xxlg-xlg-height {
-  .hero {
-    font-size: 1vh;
-  }
-}
 
-@mixin index-lg-xlg {
+
+@mixin index-md {
   .hero {
     padding-top: 9em;
     &__inner {
@@ -172,6 +169,12 @@
   }
 }
 
+//max-height: 980px
+@mixin index-xlg-height {
+  .hero {
+    font-size: 1vh;
+  }
+}
 //(max-width: 560px) and (min-height: 500px)
 @mixin index-mobile {
   .hero {
@@ -229,8 +232,7 @@
     }
   }
 }
-
-@mixin index-xxsm-xsm {
+@mixin index-xxsm {
   .hero {
     &__smile {
       width: 110px !important;
