@@ -1,5 +1,5 @@
-$main: #81a3fa;
-$secondary: #fab54e;
+$main: #3163e3;
+$secondary: #e39331;
 $black: #111;
 $black-2: #404040;
 
@@ -19,3 +19,5 @@ $gradient: linear-gradient(
   #81a3fa 31.34%,
   #fab54e 71.24%
 );
+$gradient--parent: linear-gradient(257.35deg, #3163e3 -8.88%, #7feda7 97.28%);
+$gradient--kids: linear-gradient(257.35deg, #e39331 -8.88%, #7feda7 97.28%);

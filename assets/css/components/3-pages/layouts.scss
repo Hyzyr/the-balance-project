@@ -50,7 +50,6 @@
     }
   }
 }
-
 .article {
   display: flex;
   flex-direction: column;
@@ -67,7 +66,7 @@
       margin-bottom: 5px;
       span {
         padding: 0.2em 0.55em;
-        background: linear-gradient(257.35deg, #e39331 -8.88%, #7feda7 97.28%);
+        background: $gradient--kids;
         border-radius: 8px;
         //font
         color: #ffffff;
@@ -127,25 +126,23 @@
       }
     }
   }
-  &--parent {
+
+  &:not(.article--parent) {
     .ratioImage {
-      background-image: url(../images/lazy/logo.png);
-      background-size: 30% auto;
+      background-image: url(../images/lazy/smile.png);
+      background-size: 40% auto;
     }
+  }
+  &--parent {
     .article__content {
       &-badge {
         span {
-          background: linear-gradient(
-            257.35deg,
-            #3163e3 -8.88%,
-            #7feda7 97.28%
-          );
+          background: $gradient--parent;
         }
       }
     }
   }
 }
-
 .articleSection {
   padding: 80px 0;
   &__inner {
@@ -164,7 +161,6 @@
     }
   }
 }
-
 .slider {
   &__inner {
     display: flex;
@@ -265,7 +261,6 @@
     }
   }
 }
-
 .blog {
   padding-bottom: 60px;
   .autoContainer {
@@ -287,7 +282,7 @@
   }
 }
 
-@mixin articles-desktop {
+@mixin layouts-desktop {
   .slider {
     .article {
       padding: 15px;
@@ -297,12 +292,20 @@
         transition: 0.3s ease-out;
       }
       &:hover {
-        background: rgba($main, 0.16);
+        background: rgba($secondary, 0.1);
         transition-delay: 0.1s;
         z-index: 1;
         transform: translateY(-5px);
         .hr {
-          background: rgba($main, 0.26);
+          background: rgba($secondary, 0.26);
+        }
+      }
+      &--parent {
+        &:hover {
+          background: rgba($main, 0.1);
+          .hr {
+            background: rgba($main, 0.26);
+          }
         }
       }
     }
@@ -311,7 +314,7 @@
     }
   }
 }
-@mixin articles-maxlg {
+@mixin layouts-maxlg {
   .slider {
     &__inner {
       .slick {
@@ -329,9 +332,8 @@
     }
   }
 }
-
 /// max-width: 840px
-@mixin articles-md-extra {
+@mixin layouts-md-extra {
   .lander {
     padding: 15px 0;
   }
@@ -355,9 +357,8 @@
     }
   }
 }
-
 /// max-width: 580px
-@mixin articles-xsm {
+@mixin layouts-xsm {
   .lander {
     &__inner {
       min-height: 325px;
@@ -403,9 +404,8 @@
     }
   }
 }
-
 /// (max-width: 420px)
-@mixin articles-xxsm {
+@mixin layouts-xxsm {
   .slider {
     &__inner {
       margin: 0 -5px;
