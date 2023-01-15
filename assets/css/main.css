@@ -1440,16 +1440,13 @@ li {
   margin: 0 -15px;
   padding-bottom: 70px;
 }
-.slider__inner-pair {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
 .slider__inner .article {
   cursor: pointer;
   padding: 0 15px;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .slider__inner .article:active {
   -webkit-transform: scale(0.98);
