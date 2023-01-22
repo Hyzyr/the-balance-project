@@ -172,7 +172,15 @@
       padding: 0 15px;
       transition: 0.3s ease-out;
       box-sizing: border-box;
-      
+      height: 100%;
+
+      &__content {
+        &-title {
+          line-height: 1.2em;
+          height: 3.6em;
+        }
+      }
+
       &:active {
         transform: scale(0.98);
       }
@@ -256,6 +264,11 @@
           }
         }
       }
+      &-slide {
+        & > div {
+          height: 100%;
+        }
+      }
     }
   }
 }
@@ -279,7 +292,7 @@
     }
   }
 }
-
+/// min-width: 1025px
 @mixin layouts-desktop {
   .slider {
     .article {
@@ -312,6 +325,7 @@
     }
   }
 }
+/// max-width: 1580px
 @mixin layouts-maxlg {
   .slider {
     &__inner {
@@ -330,6 +344,20 @@
     }
   }
 }
+/// max-width: 1180px
+@mixin layouts-lg {
+  .slider {
+    .article {
+      &__content {
+        &-title {
+          height: 2.4em;
+          @include ellipsisLine(2);
+        }
+      }
+    }
+  }
+}
+
 /// max-width: 840px
 @mixin layouts-md-extra {
   .lander {

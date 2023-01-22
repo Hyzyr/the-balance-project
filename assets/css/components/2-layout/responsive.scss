@@ -12,6 +12,7 @@
 /// lg
 /// max-width: 1180px
 @media (max-width: 1180px) {
+  @include layouts-lg;
 }
 /// md
 /// max-width: 1024px
