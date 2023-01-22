@@ -3,7 +3,7 @@ if (slickSlider) {
   $(slickSlider).slick({
     dots: true,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     infinite: true,
     responsive: [
       {
